@@ -1,0 +1,76 @@
+1. self Introduction:
+ 
+I am shubham waghmare I have done my graduation in IT from Pune university.Right after finishing my college.I joined TCS and worked there for two years over this 2 years I worked on 2 projects.First project as data analyst in that I am handling metadata management-based applications where I manipulate data using SQL commands and talking about my second project as junior data scientist. It was for semiconductor manufacturing industry where The goal is to build a machine-learning model that predicts whether a wafer is working or not.This is all about my first job. Now i am currently working for western union as data scientist where my responsibilies are to detect the Fraudulent transaction, payment fraud risk optimization and portfolio management. afpart from this Parallely I am doing some online courses in the field of GEN AI.So That's all about me.
+
+2. Current Project explaination:
+Problem Statement: 
+WU offers money transfer services across different countries while providing these services to customers fraud risks are getting involved So our team Protects WU's digital business and customers from fraud. We utilize machine learning technology to establish trust with customers.
+
+Portofolio Management:
+1. Monitoring the portfolio for assign countries: There are 6 countries assign to me.So these Countries in the portfolio are experiencing frequent incidents of frauds of different types
+	- Fraud types:
+		-Account Takeover(ATO)-when fraudsters take ownership of an online account
+		-New Account Fraud-when a fraudster or money mule opens an account with the intent of committing fraud, often utilizing stolen or synthetic identities.
+		-Money Laundering-money is put through a series of transactions through foreign banks and/or legitimate businesses, making it legal or clean.
+		-Money mules transfer money that they acquire illegally either in person, via a courier service or digitally on behalf of someone else
+		-Payment fraud occurs when a cybercriminal completes any type of false or illegal transaction.
+		-Credit card fraud -By stealing a physical card, finding a lost card or card information. It can be divided into card-present fraud (CP) and  card-not-present (CNF) schemes.
+		- Reported Fraud- reported by Customer.
+		
+these fraud types has big impact on risk matrics(talking about risk matrix in risk matrix we have several columns which is built on power BI conatining total number of transaction happened,how many transactions are decline at early stage,how many transaction are move further for payment,out of that how many are decline due to some KYC issue,lastly we check final approval, final decline, Bbank decline,Chargeback amount,frudelent transactions all these thing I am monitoring. by adding to this matrix have several filter also to check where actually fraudelent transacion happen we check transaction is done by new cosutmer or exisiting customer).In our portfolio there are certain benchmarks are set so we compare these metrics with that benchmarks number and see if there are any deviation. As a responsible portfolio manager the task is to identify, analyze and mitigate these fraudulent activities to minimize risk. Mainly prioritizing high risk countries and the task is to create a comprehensive strategies as we called it as a patch rule and focus on areas with the highest potential impact and likelihood of fraud occurance and address each type of frad effectively. So we basically check in the matrix.
+
+2. Model Building:
+based on the portfolio obseravtion and findings.Most of the frauds happening in Italy so We have decided to create a model for new customer to prevent the fraud and reduce the chargebacks.
+
+3. steps while creating model
+
+Data Pull:
+Data Integration:We start our model by getting the data from snowflake. So WU has its risk engine called Blaze from which every transaction is processed. We get all the data related to every transaction in Snowflake. Where there are so many tables related to customer details, vendor details, and payment transaction details
+
+EDA- 
+1. imbalance data
+2. correlation
+3. multicollienarity
+4. data missing
+5. outlier
+6. Data distribution
+
+Data precessing:
+1.Data Cleaning:
+	-Handling missing values: 
+	-Handling outliers: 
+	-Data deduplication: 
+2.Data Transformation:
+	-feature scaling
+	-feature engineering:Feature engineering is the process of creating new features or modifying existing ones from raw data to improve the performance of machine learning models. It involves selecting, transforming, and combining raw data to create meaningful input features that can better represent the underlying patterns in the data. 
+	-Feature encoding: Convert categorical variables into numerical format using techniques like one-hot encoding or label encoding
+3.Data Reduction:
+	-multicollienarity handling
+	-correlation handling
+	-Zero variance
+	-Missing data is >90%
+	-using Domain knowledge
+	-Dimensionality reduction:
+4.Data Normalization:
+5.Data Splitting:
+6.Data Imbalance Handling:Address class imbalance issues by oversampling, undersampling, or using techniques like SMOTE.
+7.Feature Selection: A small set of important features selected using the weight of evidence and Information 
+	value, forward feature selection, and count of votes from different ml models feature importance.
+	-out 719 features we have selected 12-15 features.
+
+Model Building:
+
+Hyperparameter tunning:
+
+Model validation:
+
+PDO:
+
+
+4. TCS Project
+Problem Statement:
+The problem statement of my project is to find out the faulty wafer detection while creating semiconductor devices basically wafer is a slice of a semiconductor device that is used for creating thousands of Integrated circuits and other semiconductor devices imagine the scenario like our client has a production line where several wafers are deployed and whenever there is a fault in any wafer they have to stop their whole production line and manually have to check all wafers to detect the faulty wafer so the solution for this problem statement our client has asked us to build a model which successfully identifies faulty wafer so that entire production line does not get injured. whatever we going to make the prediction client is going the set an alarm at their end that will trigger whenever we say that a certain wafer is faulty so it will get triggered at that point in time and only that particular section on the production line will be stopped and wafer will be replaced and again production line will resume without any hindrance so this was what our problem statement.
+
+
+
+
